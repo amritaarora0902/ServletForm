@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Form Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width: 30%;
+                margin: auto;
+                font-size: 20px;
+            }
+            
+            form input{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1> My Form </h1>
+            
+            <form action="RegisterServlet" method="post">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                
+                <input type="radio" id="user_gender" name="user_gender" value="Male">
+                <label for="user_gender">Male</label>
+                <input type="radio" id="user_gender" name="user_gender" value="Female">
+                <label for="user_gender">Female</label><br><br>
+                
+                <label for="course">Choose course</label>
+                <select id="course" name="course">
+                    <option value="physics">Physics</option>
+                    <option value="maths">Maths</option>
+                </select><br><br>
+                
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </body>
+</html>
